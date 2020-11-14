@@ -43,9 +43,9 @@ cmake_dependent_option(USE_MSVC_RUNTIME_LIBRARY_DLL "Use MSVC runtime library DL
 
 if (BUILD_SHARED_LIBS AND UNIX)
     # On Unix-like systems, shared libraries can use the soname system.
-    set(GLFW_LIB_NAME glfw)
+    set(GLFW_LIB_NAME GLFW)
 else()
-    set(GLFW_LIB_NAME glfw3)
+    set(GLFW_LIB_NAME GLFW)
 endif()
 
 if (GLFW_VULKAN_STATIC)
