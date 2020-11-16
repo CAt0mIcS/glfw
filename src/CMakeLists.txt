@@ -245,3 +245,4 @@ if (GLFW_INSTALL)
             LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
 endif()
 
+SetOutputDirectory("glfw" "")
